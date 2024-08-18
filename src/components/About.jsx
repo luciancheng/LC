@@ -13,9 +13,9 @@ const About = () => {
                 <SectionHeading text={"Looking into Lucian's background and passion for engineering and technology."}/>
                 <div className="info-section flex justify-between gap-20 info-section-1">
                     <div className="info-section-extra-grid-1">
-                        <div className="info-section-extra-grid-1-item info-section-extra-grid-1-item__1 hidden-anim hidden-come-from-left">
+                        <div className="info-section-extra-grid-1-item info-section-extra-grid-1-item__1 fade-in-object">
                         </div>
-                        <div className="info-section-extra-grid-1-item info-section-extra-grid-1-item__2 hidden-anim hidden-come-from-right">
+                        <div className="info-section-extra-grid-1-item info-section-extra-grid-1-item__2 fade-in-object">
                         </div>
                     </div>
                     <div className="info-section-text fade-in-object">
@@ -56,7 +56,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="info-section-extra-grid-2 mt-6 w-full">
-                        <div className="info-section-extra-grid-2-item info-section-extra-grid-2-item__1 hidden-anim hidden-come-from-right">
+                        <div className="info-section-extra-grid-2-item info-section-extra-grid-2-item__1 fade-in-object">
                         </div>
                     </div>
                 </div>
