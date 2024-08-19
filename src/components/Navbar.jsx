@@ -1,5 +1,6 @@
 import resume from "../assets/files/LC_resume.pdf"
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -14,12 +15,15 @@ const Navbar = () => {
     }
 
     const scrollToTop = (event) => {
+    
         event.preventDefault();
+    
+        window.location.replace('/#home');
+
         window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
+            top: 0,
+            behavior: 'smooth'
         });
-        window.history.pushState(null, '', '#home');
     };
 
     return ( 
@@ -42,11 +46,11 @@ const Navbar = () => {
                     </div>
                     
                     <div className="links2 flex links-text">
-                        <a href="#home" className="clickable-item" onClick={scrollToTop}>Home</a>
-                        <a href="#about" className="clickable-item">About</a>
-                        <a href="#experience" className="clickable-item">Experience</a>
-                        <a href="#projects" className="clickable-item">Projects</a>
-                        <a href="#contact" className="clickable-item">Contact</a>
+                        <a href="/#home" className="clickable-item" onClick={scrollToTop}>Home</a>
+                        <a href="/#about" className="clickable-item">About</a>
+                        <a href="/#experience" className="clickable-item">Experience</a>
+                        <a href="/#projects" className="clickable-item">Projects</a>
+                        <a href="/#contact" className="clickable-item">Contact</a>
                     </div>
 
                     <div className="hamburger-menu clickable-item">
@@ -59,11 +63,11 @@ const Navbar = () => {
 
             {/* Part that shows up under navbar when hamburger menu is pressed */}
             <ul className="nav-links-hamburger gap-6" id="nav-links-hamburger">
-                <a href="#home" className="clickable-item" onClick={scrollToTop}>Home</a>
-                <a href="#about" className="clickable-item">About</a>
-                <a href="#experience" className="clickable-item">Experience</a>
-                <a href="#projects" className="clickable-item">Projects</a>
-                <a href="#contact" className="clickable-item">Contact</a>
+                <a href="/#home" className="clickable-item" onClick={scrollToTop}>Home</a>
+                <a href="/#about" className="clickable-item">About</a>
+                <a href="/#experience" className="clickable-item">Experience</a>
+                <a href="/#projects" className="clickable-item">Projects</a>
+                <a href="/#contact" className="clickable-item">Contact</a>
                 <a href={resume} target="_blank" rel="noreferrer" className="clickable-item">
                     <span className="navbar-links-gradient">
                         Resume 

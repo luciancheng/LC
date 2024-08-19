@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Intro from "./components/Intro";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Navbar from "./components/Navbar";
-import IntroScrollAnimation from "./components/IntroScrollAnimation";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import ExperiencePage from "./pages/ExperiencePage";
 
 function App() {
   const isMobileDevice = () => {
@@ -14,47 +14,47 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const cursor = document.querySelector('.cursor');
-    const clickableItems = document.querySelectorAll('.clickable-item');
-    setIsMobile(isMobileDevice());
+    // const cursor = document.querySelector('.cursor');
+    // const clickableItems = document.querySelectorAll('.clickable-item');
+    // setIsMobile(isMobileDevice());
 
-    if (!cursor) {
-      console.error("Cursor element not found");
-      return;
-    }
+    // if (!cursor) {
+    //   console.error("Cursor element not found");
+    //   return;
+    // }
 
-    let curX = 0;
-    let curY = 0;
-    let tgX = 0;
-    let tgY = 0;
+    // let curX = 0;
+    // let curY = 0;
+    // let tgX = 0;
+    // let tgY = 0;
 
-    function move() {
-      curX += (tgX - curX) / 4;
-      curY += (tgY - curY) / 4;
-      cursor.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
-      requestAnimationFrame(move);
-    }
+    // function move() {
+    //   curX += (tgX - curX) / 4;
+    //   curY += (tgY - curY) / 4;
+    //   cursor.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+    //   requestAnimationFrame(move);
+    // }
 
-    function handleMouseMove(event) {
-      tgX = event.clientX;
-      tgY = event.clientY;
-    }
+    // function handleMouseMove(event) {
+    //   tgX = event.clientX;
+    //   tgY = event.clientY;
+    // }
 
-    function handleMouseEnter() {
-      cursor.classList.add('hovered');
-    }
+    // function handleMouseEnter() {
+    //   cursor.classList.add('hovered');
+    // }
 
-    function handleMouseLeave() {
-      cursor.classList.remove('hovered');
-    }
+    // function handleMouseLeave() {
+    //   cursor.classList.remove('hovered');
+    // }
 
-    window.addEventListener('mousemove', handleMouseMove);
-    clickableItems.forEach(item => {
-      item.addEventListener('mouseenter', handleMouseEnter);
-      item.addEventListener('mouseleave', handleMouseLeave);
-    });
+    // window.addEventListener('mousemove', handleMouseMove);
+    // clickableItems.forEach(item => {
+    //   item.addEventListener('mouseenter', handleMouseEnter);
+    //   item.addEventListener('mouseleave', handleMouseLeave);
+    // });
 
-    move();
+    // move();
 
 
     // viewport intersection animation controller
@@ -71,28 +71,30 @@ function App() {
     const hiddenElements = document.querySelectorAll('.hidden-anim');
     hiddenElements.forEach((el) => observer.observe(el));
 
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      clickableItems.forEach(item => {
-        item.removeEventListener('mouseenter', handleMouseEnter);
-        item.removeEventListener('mouseleave', handleMouseLeave);
-      });
-    };
+    // return () => {
+    //   window.removeEventListener('mousemove', handleMouseMove);
+    //   clickableItems.forEach(item => {
+    //     item.removeEventListener('mouseenter', handleMouseEnter);
+    //     item.removeEventListener('mouseleave', handleMouseLeave);
+    //   });
+    // };
   }, []);
 
   return (
-    <div className="App">
-      <div className="cursor normal" style={{display : isMobile ? 'None' : 'block'}}></div>
-      <Navbar />
-      <div>
-        <Intro />
-        <IntroScrollAnimation />
+    <Router>
+      <div className="App">
+        {/* <div className="cursor normal" style={{display : isMobile ? 'None' : 'block'}}></div> */}
+        <Navbar />
+
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/experience/:id" element={<ExperiencePage/>}>
+          </Route>
+        </Routes>
+
+        <Footer />
       </div>
-      <About />
-      <Experience />
-      <Projects />
-      <Footer />
-    </div>
+    </Router>
   );
 }
 
