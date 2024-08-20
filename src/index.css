@@ -770,6 +770,17 @@ section {
   }
 }
 
+@media(max-width: 1400px) {
+  h1 > *{
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .into-background-text {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media(max-width: 1300px) {
   .experience-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
