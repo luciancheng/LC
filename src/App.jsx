@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,11 +8,11 @@ import Home from "./pages/Home";
 import ExperiencePage from "./pages/ExperiencePage";
 
 function App() {
-  const isMobileDevice = () => {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  };
-  const [isMobile, setIsMobile] = useState(false);
-  const [rerender, setRerender] = useState(false);
+  // const isMobileDevice = () => {
+  //   return /Mobi|Android/i.test(navigator.userAgent);
+  // };
+  // const [isMobile, setIsMobile] = useState(false);
+
 
   useEffect(() => {
     // const cursor = document.querySelector('.cursor');
@@ -59,23 +59,6 @@ function App() {
 
 
     // viewport intersection animation controller
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show-element');
-                observer.unobserve(entry.target)
-            } 
-        });
-    });
-
-    const hiddenElements = document.querySelectorAll('.hidden-anim');
-    hiddenElements.forEach((el) => observer.observe(el));
-
-    const handlePopState = () => {
-      setRerender(prev => !prev); // Toggle state to force a re-render
-    };
-
-    window.addEventListener('popstate', handlePopState);
 
     // return () => {
     //   window.removeEventListener('mousemove', handleMouseMove);
@@ -84,9 +67,6 @@ function App() {
     //     item.removeEventListener('mouseleave', handleMouseLeave);
     //   });
     // };
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-    };
   }, []);
 
   return (
