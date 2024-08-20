@@ -12,6 +12,7 @@ function App() {
     return /Mobi|Android/i.test(navigator.userAgent);
   };
   const [isMobile, setIsMobile] = useState(false);
+  const [rerender, setRerender] = useState(false);
 
   useEffect(() => {
     // const cursor = document.querySelector('.cursor');
@@ -62,14 +63,19 @@ function App() {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show-element');
-            } else {
-                entry.target.classList.remove('show-element');
-            }
+                observer.unobserve(entry.target)
+            } 
         });
     });
 
     const hiddenElements = document.querySelectorAll('.hidden-anim');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    const handlePopState = () => {
+      setRerender(prev => !prev); // Toggle state to force a re-render
+    };
+
+    window.addEventListener('popstate', handlePopState);
 
     // return () => {
     //   window.removeEventListener('mousemove', handleMouseMove);
@@ -78,6 +84,9 @@ function App() {
     //     item.removeEventListener('mouseleave', handleMouseLeave);
     //   });
     // };
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
   }, []);
 
   return (
