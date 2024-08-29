@@ -7,9 +7,17 @@ import embeddedSystems from "../assets/images/embeddedsystem.jpg"
 import geneticProgramming from "../assets/images/geneticprogramming.jpg"
 import nadinamachina from "../assets/images/nadinamachina.jpg"
 import spellcast from "../assets/images/spellcast.png"
+import jaylolfadez from "../assets/images/jaylolfadez.png"
 
 const Projects = () => {
     const projects = [
+        {
+            name: "Jaylolfadez - Startup",
+            description: "Developed a full-stack web application social media platform for hair cutting. Website allows for users to interact with posts through comments and likes, and also lets users book hair cuts, leading to a profit of $400.",
+            link: "https://jaylolfadez.com/",
+            techstack: ["React", "HTML", "CSS", "TailwindCSS", "Javascript", "MongoDB", "AWS EC2", "AWS S3", "NGINX", "Linux"],
+            image: jaylolfadez
+        },
         {
             name: "Discord SpellCast Solver",
             description: "Developed a front-end and back-end algorithm to compute the best possible words on a given board of letters using available letter boosts and available letter swaps to maximize points. This algorithm is done using a prefix tree implementation of a dictionary and advanced recursive backtracking for swap implementation.",
