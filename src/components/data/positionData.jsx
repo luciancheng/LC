@@ -11,7 +11,7 @@ export const positions = {
         title: "Software Engineer Intern", 
         company: "Bluewrist Inc.", 
         image: bluewristImg1, 
-        date: "May 2024 - Present",
+        date: "May 2024 - Aug 2024",
         location: "Markham, ON, CA",
         description: "Led a team of 5 to develop a new software application as a part of the software family. I worked with 2D computer vision anomaly detection models and developed a full-stack application, focusing on deployment and customer use. Developed high level systems and software architecture.",
         techstack: ["Python", "Pytorch", "Visual Basic", ".NET", "Flask", "REST API", "Anomalib", "TCP/IP", "AI/ML", "OpenCV"],
