@@ -17,7 +17,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Use Node.js 20
+          node-version: 20
+
+      - name: Check Node.js version
+        run: node -v # Add this to confirm Node.js version
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -35,9 +38,13 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20 # Explicitly set Node.js version here too
+
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
