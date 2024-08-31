@@ -18,10 +18,11 @@ const Home = () => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
               entry.target.classList.add('show-element');
-              //observer.unobserve(entry.target);
-          } else {
-            entry.target.classList.remove('show-element');
+              observer.unobserve(entry.target);
           }
+          // } else {
+          //   entry.target.classList.remove('show-element');
+          // }
       });
   });
 

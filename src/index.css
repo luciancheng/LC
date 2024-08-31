@@ -991,8 +991,8 @@ section {
 }
 
 .hidden-header {
-  transform: translateY(50px);
-  filter: blur(5px);
+  transform: translateY(25px);
+  filter: blur(2px);
 }
 
 .hidden-come-from-left {
