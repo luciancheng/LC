@@ -51,7 +51,7 @@ const About = () => {
                         <div className="unimportant-text mt-3">September 2021 - Expected: April 2026</div>
                         <div className="mt-3">B.Eng.BME - Bachelors of Mechatronics and Biomedical Engineering</div>
                         <p>
-                            Releavant Coursework: Data Structures and Algorithms, Embedded Systems Design, Software Development, 
+                            Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Software Development, 
                             Software Architectures, Systems Design, Operating Systems
                         </p>
                     </div>
