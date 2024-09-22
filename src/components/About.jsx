@@ -3,8 +3,8 @@ import TechStack from "./TechStack";
 
 const About = () => {
 
-    const ts_languages = ["python", "cpp", "csharp", "java", "html", "css", "js", "swift"];
-    const ts_frameworks = ["pytorch", "react", "django", "mongodb", "nodejs", "expressjs", "mysql", "spring"];
+    const ts_languages = ["python", "cpp", "swift", "java", "html", "css", "js", "ts"];
+    const ts_frameworks = ["pytorch", "react", "django", "mongodb", "nodejs", "expressjs", "postgresql", "spring"];
     const ts_devtools = ["git", "github", "gitlab", "vscode", "aws", "gcd", "docker", "figma"];
     
     return ( 
