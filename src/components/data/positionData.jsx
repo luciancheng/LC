@@ -6,17 +6,6 @@ import macjhe from "../../assets/images/macjhe.jpg";
 
 
 export const positions = {
-    'bluewrist-swe-intern-2' : 
-    {
-        title: "Software Engineer Intern", 
-        company: "Bluewrist Inc.", 
-        image: bluewristImg1, 
-        date: "May 2024 - Aug 2024",
-        location: "Markham, ON, CA",
-        description: "Led a team of 5 to develop a new software application as a part of the software family. I worked with 2D computer vision anomaly detection models and developed a full-stack application, focusing on deployment and customer use. Developed high level systems and software architecture.",
-        techstack: ["Python", "Pytorch", "Visual Basic", ".NET", "Flask", "REST API", "Anomalib", "TCP/IP", "AI/ML", "OpenCV"],
-        id: 4
-    },
     "mac-ecocar-cavs-team" :
     {
         title : "CAVs Software Team", 
@@ -27,6 +16,17 @@ export const positions = {
         description: "Developed SAE Level 2 algorithms for autonomous driving features in a Cadillac Lyriq, implementing CACC features of ADAS. Implemented lead vehicle detection algorithms and SIL testing in CARLA. Developed vehicle planning algorithms for trajectory transformations and sensor data processing.",
         techstack: ["Python", "Pytest", "CARLA", "RTMaps",, "Clustering Algorithms", "SIL"],
         id : 3
+    },
+    'bluewrist-swe-intern-2' : 
+    {
+        title: "Software Engineer Intern", 
+        company: "Bluewrist Inc.", 
+        image: bluewristImg1, 
+        date: "May 2024 - Aug 2024",
+        location: "Markham, ON, CA",
+        description: "Led a team of 5 to develop a new software application as a part of the software family. I worked with 2D computer vision anomaly detection models and developed a full-stack application, focusing on deployment and customer use. Developed high level systems and software architecture.",
+        techstack: ["Python", "Pytorch", "Visual Basic", ".NET", "Flask", "REST API", "Anomalib", "TCP/IP", "AI/ML", "OpenCV"],
+        id: 4
     },
     "mac-mechanics-ta" : 
     {

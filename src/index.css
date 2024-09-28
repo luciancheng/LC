@@ -726,6 +726,21 @@ section {
   padding: 0.6rem 0.9rem;
 }
 
+.project-card-button, .project-card-button i {
+  color: var(--color-white-1);
+}
+
+.project-card-button {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(to bottom right, var(--color-blue-1), var(--color-pink-1));
+  transition: var(--transitionTime);
+}
+
+.project-card-button:hover {
+  scale: 1.05;
+}
+
 .view-project-text {
   transition: var(--transitionTime);
   position:relative;
