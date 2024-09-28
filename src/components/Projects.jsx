@@ -15,7 +15,7 @@ const Projects = () => {
             name: "Jaylolfadez - Startup",
             description: "Developed a full-stack web application social media platform for hair cutting. Website allows for users to interact with posts through comments and likes, and also lets users book hair cuts, leading to a profit of $400.",
             link: "https://jaylolfadez.com/",
-            techstack: ["React", "HTML", "CSS", "TailwindCSS", "Javascript", "MongoDB", "AWS EC2", "AWS S3", "NGINX", "Linux"],
+            techstack: ["React", "HTML", "CSS", "TailwindCSS", "Javascript", "MongoDB", "AWS EC2", "AWS S3", "NGINX", "Linux", "Docker"],
             image: jaylolfadez
         },
         {
@@ -67,7 +67,7 @@ const Projects = () => {
                 <div className="sectionheading mb-20 text-5xl projects-heading hidden-anim hidden-header">
                     Explore Lucian's personal work and projects.
                 </div>
-                <div className="project-container flex flex-col gap-20">
+                <div className="project-container gap-8">
                     {
                         projects.map((proj, i) => (
                             <ProjectCard projectInfo={proj} key={i}/>
