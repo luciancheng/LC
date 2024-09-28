@@ -27,25 +27,11 @@ const Projects = () => {
             image: spellcast
         },
         {
-            name: "Pacemaker Project",
+            name: "Full-Stack Pacemaker",
             description: "Created a pacemaker medical device with a Python Tkinter GUI and physical device. The GUI displayed graph data  and allowed for modificaiton of control variables and parameters.",
             link: "https://github.com/luciancheng/PacemakerProject",
-            techstack: ["Python", "Tkinter", "Data Encryption", "Matlab", "Simulink"],
+            techstack: ["Python", "Tkinter", "Data Encryption", "Matlab", "Simulink", "Matplotlib"],
             image: pacemaker
-        },
-        {
-            name: "Embedded Systems Design",
-            description: "Developed many embedded systems circuits using a microcontroller and actuators built with circuit components and logic",
-            link: "https://github.com/luciancheng/Cpp-Projects/tree/main/Embedded-Systems",
-            techstack: ["C++", "Embedded Systems", "FSM", "Circuit Design", "ARM", "Microcontroller", "RTOS"],
-            image: embeddedSystems
-        },
-        {
-            name: "Smart Baby Monitor",
-            description: "Developed a prototype and verification plan for a smart baby monitor device to process frequencies of cries to detect the issue. Built with a filter circuit, Python and a MongoDB AWS database.",
-            link: "https://github.com/luciancheng/Python-Projects/tree/main/Dimple",
-            techstack: ["Python", "AWS", "MongoDB", "Microcontroller"],
-            image: dimpleCircuit
         },
         {
             name: "Genetic Programming Cart",
@@ -58,8 +44,22 @@ const Projects = () => {
             name: "Keep-Up Champions",
             description: "Developed a Roblox simulator game, incorporating core software engineering principles leading to a lifetime 15000+ visits and $100+ profit.",
             link: "https://www.roblox.com/games/7167348960/WORLD-CUP-Keep-Up-Champions",
-            techstack: ["Lua", "Blender"],
+            techstack: ["Lua", "Blender", "Roblox Studio"],
             image: kuc
+        },
+        {
+            name: "Embedded Systems Design",
+            description: "Developed many embedded systems circuits using a microcontroller and actuators built with circuit components and logic",
+            link: "https://github.com/luciancheng/Cpp-Projects/tree/main/Embedded-Systems",
+            techstack: ["C++", "Embedded Systems", "FSM", "Circuit Design", "ARM", "Microcontroller", "RTOS"],
+            image: embeddedSystems
+        },
+        {
+            name: "Smart Baby Monitor",
+            description: "Developed a prototype and verification plan for a smart baby monitor device to process frequencies of cries to detect the issue. Built with a filter circuit, Python and a MongoDB AWS database.",
+            link: "https://github.com/luciancheng/Python-Projects/tree/main/Dimple",
+            techstack: ["Python", "AWS", "MongoDB", "Microcontroller", "LTSpice", "Raspberry Pi"],
+            image: dimpleCircuit
         },
         {
             name: "Arm Exerciser Device",
