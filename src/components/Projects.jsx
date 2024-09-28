@@ -6,8 +6,9 @@ import dimpleCircuit from "../assets/images/dimplecircuit.png"
 import embeddedSystems from "../assets/images/embeddedsystem.jpg"
 import geneticProgramming from "../assets/images/geneticprogramming.jpg"
 import nadinamachina from "../assets/images/nadinamachina.jpg"
-import spellcast from "../assets/images/spellcast.png"
-import jaylolfadez from "../assets/images/jaylolfadez.png"
+import spellcast from "../assets/images/spellcast.jpg"
+import jaylolfadez from "../assets/images/jaylolfadez.jpg"
+import kuc from "../assets/images/kuc.jpg"
 
 const Projects = () => {
     const projects = [
@@ -52,6 +53,13 @@ const Projects = () => {
             link: "https://github.com/luciancheng/Cpp-Projects/tree/main/genetic_programming",
             techstack: ["C++", "AI", "Reinforcement Learning", "Deep Learning", "Data structures"],
             image: geneticProgramming
+        },
+        {
+            name: "Keep-Up Champions",
+            description: "Developed a Roblox simulator game, incorporating core software engineering principles leading to a lifetime 15000+ visits and $100+ profit.",
+            link: "https://www.roblox.com/games/7167348960/WORLD-CUP-Keep-Up-Champions",
+            techstack: ["Lua", "Blender"],
+            image: kuc
         },
         {
             name: "Arm Exerciser Device",
