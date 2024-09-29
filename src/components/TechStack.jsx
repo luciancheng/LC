@@ -1,10 +1,11 @@
 const TechStack = ({iconList}) => {
     return ( 
-        <div className="techstack">
-            <div className="flex flex-wrap justify-evenly gap-7">
-                {iconList.map((img, i) => (
-                    <div className="techstack-icon-card" key={i}>
-                        <i key={i} className={`ci ci-${img} ci-4x`}></i>
+        <div className="techstack mt-2">
+            <div className="flex flex-col gap-3">
+                {iconList.map((item, i) => (
+                    <div className="techstack-icon-card flex items-center gap-3" key={i}>
+                        <i key={i} className={`devicon-${item.img} text-xl`}></i>
+                        <span className="text-sm">{item.name}</span>
                     </div>
                 ))}
             </div>

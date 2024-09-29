@@ -450,7 +450,7 @@ section {
 
 .info-section-extra-grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 2rem;
   justify-content: space-between;
@@ -458,13 +458,9 @@ section {
 
 .info-section-extra-grid-3-item {
   transform: translateX(-50px);
-  border-radius: 20px;
-  padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   /* box-shadow: var(--soft-shadow-1); */
-  background-color: var(--color-white-3);
   overflow: hidden;
   padding-bottom: 7rem;
 }
@@ -473,8 +469,10 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.techstack {
-  margin-top: 20%;
+.techstack-icon-card {
+  background-color: var(--color-white-3);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 /* experience */
@@ -1120,4 +1118,8 @@ section {
 
 .info-section-extra-grid-3-item:nth-child(3) {
   transition-delay: 400ms;
+}
+
+.info-section-extra-grid-3-item:nth-child(4) {
+  transition-delay: 600ms;
 }

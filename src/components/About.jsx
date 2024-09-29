@@ -3,9 +3,51 @@ import TechStack from "./TechStack";
 
 const About = () => {
 
-    const ts_languages = ["python", "cpp", "swift", "java", "html", "css", "js", "ts"];
-    const ts_frameworks = ["pytorch", "react", "django", "mongodb", "nodejs", "expressjs", "postgresql", "spring"];
-    const ts_devtools = ["git", "github", "gitlab", "vscode", "aws", "gcd", "docker", "figma"];
+    const ts_languages = [
+        {img : "python-plain", name : "Python"},
+        {img : "cplusplus-plain", name : "C++"},
+        {img : "c-plain", name : "C"},
+        {img : "swift-plain", name : "Swift"},
+        {img : "java-plain", name : "Java"},
+        {img : "javascript-plain", name : "JavaScript"},
+        {img : "typescript-plain", name : "TypeScript"},
+        {img : "visualbasic-plain", name : "Visual Basic"},
+    ];
+
+    const ts_frameworks = [
+        {img : "pytorch-plain", name : "PyTorch"},
+        {img : "opencv-plain", name : "OpenCV"},
+        {img : "react-plain", name : "React"},
+        {img : "flask-plain", name : "Flask"},
+        {img : "nodejs-plain", name : "NodeJS"},
+        {img : "express-original", name : "Express"},
+        {img : "spring-plain", name : "Spring"},
+        {img : "dotnetcore-plain", name : ".NET"},
+        {img : "numpy-plain", name : "NumPy"},
+        {img : "pandas-plain", name : "Pandas"},
+    ];
+
+    const ts_technologies = [
+        {img : "mongodb-plain", name : "MongoDB"},
+        {img : "postgresql-plain", name : "PostgreSQL"},
+        {img : "mysql-plain", name : "MySQL"},
+        {img : "amazonwebservices-plain-wordmark", name : "AWS"},
+        {img : "googlecloud-plain", name : "Google Cloud Platform"},
+        {img : "docker-plain", name : "Docker"},
+        {img : "nginx-plain", name : "NGINX"},
+        {img : "linux-plain", name : "Linux"},
+    ];
+
+    const ts_devtools = [
+        {img : "git-plain", name : "Git"},
+        {img : "github-plain", name : "Github"},
+        {img : "gitlab-plain", name : "Gitlab"},
+        {img : "jira-plain", name : "Jira"},
+        {img : "vscode-plain", name : "VScode"},
+        {img : "visualstudio-plain", name : "Visual Studio"},
+        {img : "jetbrains-plain", name : "Jetbrains Suite"},
+        {img : "figma-plain", name : "Figma"},
+    ];
     
     return ( 
         <div id="about" className="about pt-32">
@@ -72,10 +114,17 @@ const About = () => {
                                 <h4>Languages</h4>
                                 <TechStack iconList={ts_languages}/>
                             </div>
+
                             <div className="info-section-extra-grid-3-item hidden-anim">
-                                <h4>Technologies / Frameworks</h4>
+                                <h4>Frameworks / Libraries</h4>
                                 <TechStack iconList={ts_frameworks}/>
                             </div>
+
+                            <div className="info-section-extra-grid-3-item hidden-anim">
+                                <h4>Technologies</h4>
+                                <TechStack iconList={ts_technologies}/>
+                            </div>
+
                             <div className="info-section-extra-grid-3-item hidden-anim">
                                 <h4>Developer Tools</h4>
                                 <TechStack iconList={ts_devtools}/>
