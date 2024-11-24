@@ -452,11 +452,13 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-gap: 2rem;
+  overflow: visible;
+  grid-gap: 1rem;
   justify-content: space-between;
 }
 
 .info-section-extra-grid-3-item {
+  padding: 1rem;
   transform: translateX(-50px);
   display: flex;
   flex-direction: column;
@@ -473,7 +475,13 @@ section {
   background-color: var(--color-white-3);
   padding: 0.7rem;
   border-radius: 0.5rem;
+  /* box-shadow: 
+    2px 5px 15px var(--color-blue-1),
+   0px 5px 15px var(--color-pink-1); */
+        
 }
+
+
 
 /* experience */
 
