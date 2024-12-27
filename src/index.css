@@ -281,7 +281,7 @@ h1, h1 * {
 
 .intro-companygradient {
   background: radial-gradient(circle,
-    #273DFF, #3AACFF);
+  #0064e0, #0484fc);
     animation: text-gradient 15s linear infinite;
     background-size: 300% 300%;
     background-clip: text;

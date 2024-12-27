@@ -3,9 +3,21 @@ import bluewristImg1 from "../../assets/images/bluewrist1.jpg";
 import bluewristImg2 from "../../assets/images/bluewrist2.jpg";
 import medtImg from "../../assets/images/medt.jpg";
 import macjhe from "../../assets/images/macjhe.jpg";
+import metasign from "../../assets/images/metasign.jpg"
 
 
 export const positions = {
+    "meta-swe-intern" :
+    {
+        title : "Software Engineer Intern", 
+        company : "Meta", 
+        image : metasign, 
+        date : "Incoming May 2025",
+        location: "Menlo Park, CA, USA",
+        description: "Incoming SWE Intern at Menlo Park",
+        techstack: ["N/A"],
+        id : 5
+    },
     "mac-ecocar-cavs-team" :
     {
         title : "CAVs Software Team", 
