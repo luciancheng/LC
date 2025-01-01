@@ -47,6 +47,7 @@ const About = () => {
         {img : "visualstudio-plain", name : "Visual Studio"},
         {img : "jetbrains-plain", name : "Jetbrains Suite"},
         {img : "figma-plain", name : "Figma"},
+        
     ];
     
     return ( 
