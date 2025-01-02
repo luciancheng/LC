@@ -20,6 +20,9 @@
   --color-blue-1: #47A7FF;
   --color-blue-2: #74bafc;
 
+  --meta-blue-1: #0064e0;
+  --meta-blue-2: #0484fc;
+
   --color-pink-1: rgb(221, 74, 255);
   --color-pink-2: rgb(230, 117, 255);
 
@@ -612,6 +615,10 @@ section {
 
 .back-home-text:hover {
   text-decoration: underline;
+}
+
+.company-name-text {
+  color: var(--meta-blue-1);
 }
 
 

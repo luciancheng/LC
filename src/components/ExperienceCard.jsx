@@ -10,10 +10,15 @@ const ExperienceCard = ({positionInfo, id, func}) => {
                     <p className="learn-more-text">Learn More</p>
                     </div>
                 </div>
-                <div className="experience-card-text mt-2">
+                <div className="experience-card-text mt-3">
                     <h3 className="text-lg font-bold">{positionInfo.title}</h3>
-                    <h4>{positionInfo.company}</h4>
-                    <p className="unimportant-text text-sm">{positionInfo.date}</p>
+                    <div className="flex items-center gap-2 mt-1">
+                        <p className="company-name-text">{positionInfo.company}</p>
+                        <p className="unimportant-text">•</p>
+                        <p className="unimportant-text">{positionInfo.date}</p>
+                    </div>
+                    
+                    
                 </div>
             </div>
 
