@@ -177,7 +177,6 @@ h1, h1 * {
 }
 
 .nav-links-hamburger {
-  display: none;
   width: 100vw;
   /* background-color: var(--color-white-1); */
   background-color: rgba(253, 253, 253, .65);
@@ -187,15 +186,12 @@ h1, h1 * {
   z-index: 9;
   top: 3rem;
   padding: 1.5rem;
-}
-
-.show {
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;  
+ align-items: center;
 }
+
 
 .hamburger-menu-icon{
   color: var(--color-black-2);
@@ -221,11 +217,14 @@ h1, h1 * {
 
 .navbar-links-gradient, .navbar-links-gradient * {
   background: radial-gradient(circle,
-  var(--color-blue-1), var(--color-pink-1));
+  var(--meta-blue-1), var(--meta-blue-2));
   animation: text-gradient 15s linear infinite;
   background-size: 300% 300%;
   background-clip: text;
   color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 
