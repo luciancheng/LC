@@ -14,7 +14,7 @@ export const positions = {
         image : metasign, 
         date : "Incoming May 2025",
         location: "Menlo Park, CA, USA",
-        description: "Incoming SWE Intern at Menlo Park",
+        description: "Incoming SWE Intern at Meta HQ located in Menlo Park, California",
         techstack: ["N/A"],
         id : 5
     },
