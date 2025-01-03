@@ -21,18 +21,18 @@ const ProjectCard = ({projectInfo}) => {
                         ))}                      
                     </div>
                 </div>
-                <div className="flex gap-4 flex-wrap mt-6">
+                <div className="flex gap-3 flex-wrap mt-6">
                     {projectInfo.github.length > 0 &&
                         <a className="project-card-button flex items-center gap-2 w-max" href={projectInfo.github} target="_blank" rel="noreferrer">
-                            Github
                             <i className="fa-brands fa-github"></i>
+                            Github
                         </a>
                     }
                     
                     {projectInfo.link.length > 0 && 
                         <a className="project-card-button flex items-center gap-2 w-max" href={projectInfo.link} target="_blank" rel="noreferrer">
-                            View
                             <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                            View
                         </a>
                     }
                 </div>

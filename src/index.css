@@ -11,7 +11,7 @@
   --color-white-4: #c4c4c4;
 
   --color-black-1: #1D1D1D;
-  --color-black-2: #575757;
+  --color-black-2: #474747;
   --color-black-3: #727272;
   --color-black-4: #adadad;
 
@@ -386,9 +386,7 @@ section {
 }
 
 .info-section-header {
-  color: var(--color-black-4);
-  font-weight: 500;
-  font-size: 1rem;
+  color: var(--color-black-2);
 }
 
 .info-section-text p {
@@ -610,7 +608,7 @@ section {
 }
 
 .exp-pos-exp-desc {
-  color: var(--color-black-3);
+  color: var(--color-black-2);
 }
 
 .back-home-text:hover {
@@ -641,9 +639,9 @@ section {
 }
 
 .popup-content {
-  background-color: var(--color-white-3);
-  width: 80%;
-  height: 90%;
+  background-color: var(--color-white-1);
+  width: 50%;
+  height: 95%;
   overflow-y: auto;
   border-radius: 0.75rem;
   position: relative;
@@ -673,6 +671,21 @@ section {
   border: 3px solid var(--color-white-1); /* Space around scrollbar */
 }
 
+.experience-information-container {
+  background-color: var(--color-white-3);
+  border-radius: 1rem;
+}
+
+.experience-position-title {
+  color: var(--color-black-1);
+}
+
+.experience-company-image {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+}
 
 
 
@@ -735,18 +748,19 @@ section {
 
 .project-tech {
   background-color: var(--color-white-3);
-  border-radius: 0.4rem;
+  color: var(--color-black-2);
+  font-weight: 500;
+  border-radius: 1rem;
   padding: 0.6rem 0.9rem;
 }
 
 .project-card-button, .project-card-button i {
-  color: var(--color-white-1);
+  color: var(--meta-blue-2);
 }
 
 .project-card-button {
   padding: 0.6rem 0.9rem;
   border-radius: 0.7rem;
-  background-image: linear-gradient(to bottom right, var(--color-blue-1), var(--color-pink-1));
   transition: var(--transitionTime);
 }
 
@@ -860,7 +874,7 @@ section {
     max-width: 90%;
   }
   .popup-content {
-    width: 95%;
+    width: 70%;
   }
 }
 
@@ -998,6 +1012,9 @@ section {
   .project-card-image-container {
     height: 16rem;
   }
+  .popup-content {
+    width: 95%;
+  }
 }
 
 @media (max-width: 750px) {
@@ -1051,9 +1068,6 @@ section {
   }
   .experience-popup-container {
     padding: 0.7rem;
-  }
-  .popup-content {
-    height: 95%;
   }
 }
 
