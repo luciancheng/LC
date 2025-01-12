@@ -11,7 +11,7 @@ import jaylolfadez from "../assets/images/jaylolfadez.jpg"
 import kuc from "../assets/images/kuc.jpg"
 import villara from "../assets/images/villara.jpg"
 import mac2cal from "../assets/images/mac2cal.jpg"
-import leetbuddy from "../assets/images/leetbuddy.jpg"
+import leetbuddy from "../assets/images/leetbuddy.png"
 
 const Projects = () => {
     const projects = [
