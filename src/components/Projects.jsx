@@ -11,9 +11,18 @@ import jaylolfadez from "../assets/images/jaylolfadez.jpg"
 import kuc from "../assets/images/kuc.jpg"
 import villara from "../assets/images/villara.jpg"
 import mac2cal from "../assets/images/mac2cal.jpg"
+import leetbuddy from "../assets/images/leetbuddy.jpg"
 
 const Projects = () => {
     const projects = [
+        {
+            name: "LeetBuddy",
+            description: "Created a Google Chrome extension AI assistant to supercharge the LeetCode learning experience for interviews. This allows for whole page comprehension, text, and image analysis from a whiteboard using Google Gemini LLM.",
+            github: "https://devpost.com/software/leetbuddy?ref_content=user-portfolio&ref_feature=in_progress",
+            link: "",
+            techstack: ["React", "TailwindCSS", "Express", "Redis", "Docker", "Render"],
+            image: leetbuddy
+        },
         {
             name: "Villara - Startup",
             description: "Founder of Villara. Currently working on designing and developing a full-stack web application to connect a those with talents in freelancing and trade skills to potential customers and clients within a community. Services include haircuts, nails, automotive repairs, and more in the coming future. Currently still in development.",
@@ -27,7 +36,7 @@ const Projects = () => {
             description: "Developed a full-stack web application social media platform for hair cutting. Website allows for users to interact with posts through comments and likes, and also lets users book hair cuts, leading to a profit of $400.",
             github: "",
             link: "https://jaylolfadez.com/",
-            techstack: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript", "MongoDB", "AWS EC2", "AWS S3", "NGINX", "Linux", "Docker"],
+            techstack: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript", "MongoDB", "AWS EC2", "AWS S3", "NGINX", "Linux", "Docker", "Express"],
             image: jaylolfadez
         },
         {
@@ -78,14 +87,14 @@ const Projects = () => {
             techstack: ["C++", "Embedded Systems", "FSM", "Circuit Design", "ARM", "Microcontroller", "RTOS"],
             image: embeddedSystems
         },
-        {
-            name: "Smart Baby Monitor",
-            description: "Developed a prototype and verification plan for a smart baby monitor device to process frequencies of cries to detect the issue. Built with a filter circuit, Python and a MongoDB AWS database.",
-            github: "https://github.com/luciancheng/Python-Projects/tree/main/Dimple",
-            link: "",
-            techstack: ["Python", "AWS", "MongoDB", "Microcontroller", "LTSpice", "Raspberry Pi"],
-            image: dimpleCircuit
-        },
+        // {
+        //     name: "Smart Baby Monitor",
+        //     description: "Developed a prototype and verification plan for a smart baby monitor device to process frequencies of cries to detect the issue. Built with a filter circuit, Python and a MongoDB AWS database.",
+        //     github: "https://github.com/luciancheng/Python-Projects/tree/main/Dimple",
+        //     link: "",
+        //     techstack: ["Python", "AWS", "MongoDB", "Microcontroller", "LTSpice", "Raspberry Pi"],
+        //     image: dimpleCircuit
+        // },
         {
             name: "Arm Exerciser Device",
             description: "Developed a device for my patient with multiple sclerosis to help her regain functionality in her arm by implementing an app that communicates with sensors and actuators.",
