@@ -36,6 +36,7 @@ const About = () => {
         {img : "docker-plain", name : "Docker"},
         {img : "nginx-plain", name : "NGINX"},
         {img : "linux-plain", name : "Linux"},
+        {img : "redis-plain", name : "Redis"}
     ];
 
     const ts_devtools = [
