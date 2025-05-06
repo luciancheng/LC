@@ -17,7 +17,7 @@ const Projects = () => {
     const projects = [
         {
             name: "LeetBuddy",
-            description: "Created a Google Chrome extension AI assistant to supercharge the LeetCode learning experience for interviews. This allows for whole page comprehension, text, and image analysis from a whiteboard using Google Gemini LLM.",
+            description: "Created a Google Chrome extension AI assistant to supercharge the LeetCode learning experience for interviews. This allows for whole page comprehension, text, and image analysis from a whiteboard using Google Gemini LLM, gaining 60+ users.",
             github: "https://devpost.com/software/leetbuddy?ref_content=user-portfolio&ref_feature=in_progress",
             link: "https://chromewebstore.google.com/detail/leetbuddy/nlemdecocfoaimdbfgpilfgdmcllhphn",
             techstack: ["React", "TailwindCSS", "Express", "Redis", "Docker", "Render"],

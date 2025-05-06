@@ -12,9 +12,9 @@ export const positions = {
         title : "Software Engineer Intern", 
         company : "Meta", 
         image : metasign, 
-        date : "Incoming May 2025",
+        date : "May 2025 - Present",
         location: "Menlo Park, CA, USA",
-        description: "Incoming SWE Intern at Meta HQ located in Menlo Park, California",
+        description: "Incoming SWE Intern at Meta HQ located in Menlo Park, California. Working on the Counting and Structured Data Core Infastructure team - Facebook Counting Infra (FCI) internallly",
         techstack: ["N/A"],
         id : 5
     },

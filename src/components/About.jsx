@@ -65,7 +65,7 @@ const About = () => {
                     <div className="info-section-text fade-in-object">
                         <div className="info-section-header">INFO</div>
                         <p>
-                            I'm currently a fourth-year Mechatronics and Biomedical Engineering student at McMaster University in Hamilton, Ontario.
+                            I'm currently a fifth-year Mechatronics and Biomedical Engineering student at McMaster University in Hamilton, Ontario.
                             I joined the Integrated Biomedical Engineering and Health Sciences Program (iBioMed) in 2021, with an expected graduation in 2026.
                             For a long time, software and hardware have always been a interest and passion of mine growing up, having tinkered in these fields at a young age on my own and through clubs.
                             I am always looking for new opportunities to showcase my skills and expertise in technology.
