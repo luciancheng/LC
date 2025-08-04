@@ -12,10 +12,10 @@ export const positions = {
         title : "Software Engineer Intern", 
         company : "Meta", 
         image : metasign, 
-        date : "May 2025 - Present",
+        date : "May 2025 - Aug 2025",
         location: "Menlo Park, CA, USA",
-        description: "Incoming SWE Intern at Meta HQ located in Menlo Park, California. Working on the Counting and Structured Data Core Infastructure team - Facebook Counting Infra (FCI) internallly",
-        techstack: ["N/A"],
+        description: "Joined the Facebook Counting Infrastrucutre (FCI) team to work on projects scoped around SEV uptime reduction and avoidance of the tier 0 counting servies we provide, saving the company hundreds of millions each incident.",
+        techstack: ["C++", "Python", "Distributed Systems", "Hack", "Software Infrastructure", "Backend Systems"],
         id : 5
         
     },
@@ -27,7 +27,7 @@ export const positions = {
         date : "Oct 2022 - Present",
         location: "Hamilton, ON, CA",
         description: "Developed SAE Level 2 algorithms for autonomous driving features in a Cadillac Lyriq, implementing CACC features of ADAS. Implemented lead vehicle detection algorithms and SIL testing in CARLA. Developed vehicle planning algorithms for trajectory transformations and sensor data processing.",
-        techstack: ["Python", "Pytest", "CARLA", "RTMaps",, "Clustering Algorithms", "SIL"],
+        techstack: ["Python", "Pytest", "CARLA", "RTMaps", "Clustering Algorithms", "SIL"],
         id : 3
     },
     'bluewrist-swe-intern-2' : 

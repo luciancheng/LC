@@ -38,7 +38,7 @@ const Intro = () => {
                 
                 </h1>
                 <p className="text-2xl into-background-text">Mechatronics and Biomedical Engineering Student at McMaster University</p>
-                <p className="text-2xl into-background-text"> SWE Intern @&nbsp;
+                <p className="text-2xl into-background-text"> Prev SWE Intern @&nbsp;
                     <span className="intro-companygradient">
                         Meta
                     </span>
