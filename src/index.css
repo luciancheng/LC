@@ -382,9 +382,6 @@ section { position: sticky; top: 0; height: 100vh; width: 100vw; display: flex; 
   opacity: 1; transform: translateY(0); pointer-events: auto;
 }
 
-@media (hover: none) {
-  .exp-tile-overlay { opacity: 1; transform: translateY(0); pointer-events: auto; }
-}
 
 .exp-tile-desc {
   color: rgba(255, 255, 255, 0.92); font-family: var(--font-text); font-size: 0.875rem;
@@ -517,9 +514,6 @@ section { position: sticky; top: 0; height: 100vh; width: 100vw; display: flex; 
   opacity: 1; transform: translateY(0); pointer-events: auto;
 }
 
-@media (hover: none) {
-  .project-card-overlay { opacity: 1; transform: translateY(0); pointer-events: auto; }
-}
 
 .project-card-overlay-description {
   color: rgba(255, 255, 255, 0.92); font-family: var(--font-text); font-size: 0.9rem;
