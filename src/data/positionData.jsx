@@ -5,9 +5,19 @@ import medtImg from "../assets/images/medt.jpg";
 import macjhe from "../assets/images/macjhe.jpg";
 import metasign from "../assets/images/metasign.jpg";
 import metagif from "../assets/gifs/metagif.gif";
+import metagif2 from "../assets/gifs/metagif2.gif";
+import metagif3 from "../assets/gifs/metagif3.gif";
 import ecocargif from "../assets/gifs/ecocargif.gif";
+import bluewristgif from "../assets/gifs/bluewristgif.gif";
+import databricksgif from "../assets/gifs/db.gif";
 
 export const positions = {
+    "meta-swe": {
+        title: "Software Engineer", company: "Meta", image: metagif2,
+        date: "Incoming July 2025", location: "Menlo Park, CA, USA",
+        description: "Incoming Summer 2026",
+        techstack: ["Infra"], id: 6
+    },
     "meta-swe-intern": {
         title: "Software Engineer Intern", company: "Meta", image: metagif,
         date: "May 2025 - Aug 2025", location: "Menlo Park, CA, USA",
@@ -21,7 +31,7 @@ export const positions = {
         techstack: ["Python", "Pytest", "CARLA", "RTMaps", "Clustering Algorithms", "SIL"], id: 3
     },
     "bluewrist-swe-intern-2": {
-        title: "Software Engineer Intern", company: "Bluewrist Inc.", image: bluewristImg1,
+        title: "Software Engineer Intern", company: "Bluewrist Inc.", image: bluewristgif,
         date: "May 2024 - Aug 2024", location: "Markham, ON, CA",
         description: "Led a team of 5 to develop a new software application as a part of the software family. I worked with 2D computer vision anomaly detection models and developed a full-stack application, focusing on deployment and customer use. Developed high level systems and software architecture.",
         techstack: ["Python", "Pytorch", "Visual Basic", ".NET", "Flask", "REST API", "Anomalib", "TCP/IP", "AI/ML", "OpenCV"], id: 4
@@ -38,10 +48,10 @@ export const positions = {
         description: "Designed and created internal company development tool aimed to conduct 3D point cloud segmentation of weld feature extraction. Designed a full-stack ML applications to allow other engineers to gather data and train in-house data. Implemented optimization in C++ to improve runtime efficiency by 86.4%",
         techstack: ["Python", "Pytorch", "C++", "Visual Basic", ".NET", "AI/ML"], id: 1
     },
-    "mac-medt-tech-writer": {
-        title: "Software Technical Writer", company: "McMaster Med-T Guided Hands", image: medtImg,
-        date: "Oct 2022 - Dec 2022", location: "Hamilton, ON, CA",
-        description: "Transcribed code in C# to readable/understandable code for investors and stakeholders. Provided documentation of the source code aimed to stabilize hand jerk movements using a gyroscope.",
-        techstack: ["C#"], id: 0
-    }
+    // "mac-medt-tech-writer": {
+    //     title: "Software Technical Writer", company: "McMaster Med-T Guided Hands", image: medtImg,
+    //     date: "Oct 2022 - Dec 2022", location: "Hamilton, ON, CA",
+    //     description: "Transcribed code in C# to readable/understandable code for investors and stakeholders. Provided documentation of the source code aimed to stabilize hand jerk movements using a gyroscope.",
+    //     techstack: ["C#"], id: 0
+    // }
 };
