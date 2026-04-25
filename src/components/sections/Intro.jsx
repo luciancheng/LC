@@ -19,8 +19,8 @@ const Intro = () => {
                     <br />
                     <span className="intro-namegradient">Lucian Cheng</span>
                 </h1>
-                <p className="text-2xl into-background-text font-light">Mechatronics and Biomedical Engineering Student at McMaster University</p>
-                <p className="text-2xl into-background-text font-light">Prev SWE Intern @&nbsp;<span className="intro-companygradient">Meta</span></p>
+                <p className="text-2xl into-background-text font-light">Mechatronics and Biomedical Engineering Graduate from McMaster University</p>
+                <p className="text-2xl into-background-text font-light">Previously a Software Engineer Intern @&nbsp;<span className="intro-companygradient">Meta</span></p>
             </div>
         </div>
     );

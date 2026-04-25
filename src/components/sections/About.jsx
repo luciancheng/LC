@@ -82,7 +82,7 @@ const About = () => {
                     {/* Story */}
                     <div className="about-bento-story fade-in-object">
                         <span className="about-label">INFO</span>
-                        <p>I'm currently a fifth-year Mechatronics and Biomedical Engineering student at McMaster University. For a long time, software and hardware have been a passion of mine, having tinkered in these fields at a young age. I am always looking for new opportunities to showcase my skills and expertise in technology.</p>
+                        <p>I'm a recent Mechatronics and Biomedical Engineering graduate at McMaster University. For a long time, software and hardware have been a passion of mine, having tinkered in these fields at a young age. I am always looking for new opportunities to showcase my skills and expertise in technology.</p>
                         <p>I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development. During my experiences at internships and clubs, I developed software pertaining to 2D and 3D ML computer vision algorithms, full-stack applications, and autonomous driving systems.</p>
                     </div>
 
@@ -105,8 +105,8 @@ const About = () => {
                         <span className="about-label">EDUCATION</span>
                         <h3 className="text-3xl font-semibold tracking-tight mt-3">McMaster University</h3>
                         <p className="text-lg mt-1" style={{ color: 'var(--color-black-3)' }}>Department of Engineering</p>
-                        <p className="text-sm mt-2" style={{ color: 'var(--color-black-4)' }}>September 2021 — Expected: April 2026</p>
-                        <p className="mt-3">B.Eng.BME — Bachelor of Mechatronics & Biomedical Engineering. Relevant coursework in Data Structures & Algorithms, Embedded Systems Design, Software Architectures, Operating Systems, and Systems Design.</p>
+                        <p className="text-sm mt-2" style={{ color: 'var(--color-black-4)' }}>September 2021 — June 2026</p>
+                        <p className="mt-3">B.Eng.BME — Bachelor of Mechatronics & Biomedical Engineering. Relevant coursework in Data Structures & Algorithms, Embedded Systems Design, Software Architectures, Operating Systems, Systems Design, and Computer Networking.</p>
                     </div>
 
                     {/* Education image */}

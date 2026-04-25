@@ -16,7 +16,7 @@ export const positions = {
     },
     "mac-ecocar-cavs-team": {
         title: "CAVs Software Team", company: "McMaster EcoCAR", image: ecocargif,
-        date: "Oct 2022 - Present", location: "Hamilton, ON, CA",
+        date: "Oct 2022 - Aug 2025", location: "Hamilton, ON, CA",
         description: "Developed SAE Level 2 algorithms for autonomous driving features in a Cadillac Lyriq, implementing CACC features of ADAS. Implemented lead vehicle detection algorithms and SIL testing in CARLA. Developed vehicle planning algorithms for trajectory transformations and sensor data processing.",
         techstack: ["Python", "Pytest", "CARLA", "RTMaps", "Clustering Algorithms", "SIL"], id: 3
     },
