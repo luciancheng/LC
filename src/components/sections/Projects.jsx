@@ -9,13 +9,16 @@ import kuc from "../../assets/images/kuc.jpg";
 import mac2cal from "../../assets/images/mac2cal.jpg";
 import leetbuddy from "../../assets/images/leetbuddy.png";
 import clearmark from "../../assets/images/clearmark.png";
+import ecolift from "../../assets/images/ecolift.png";
 
 import leetbuddyVideo from "../../assets/videos/leetbuddy-video.mp4";
 import clearmarkVideo from "../../assets/videos/clearmark-video.mov";
+import ecoliftVideo from "../../assets/videos/ecolift.mov";
 
 const Projects = () => {
     const projects = [
-        {name: "ClearMark", category: "iOS AI Grading Platform", year: "2026", description: "A native iOS app that lets teachers and professors manage classes and test/assignment grading with AI. Scan a set of documents with your phone, and provide grading criteria, and the Gemini powered AI will auto grade the work for all students and export into a spreadsheet.", github: "https://github.com/ClearMarkApp", link: "", techstack: ["Swift", "SwiftUI", "Express", "Docker", "Render"], image: clearmark, video: clearmarkVideo },
+        { name: "EcoLift", category: "Autonomous Robotic Spotter", year: "2025 - 2026", description: "An automatic robotic spotter that integrates software, electrical, and mechanical components to detect exercising failures and provide safety assistance to the user.", github: "https://github.com/luciancheng/EcoLift", link: "", techstack: ["Python", "React", "OpenCV", "Raspberry Pi", "WebRTC", "WebSocket"], image: ecolift, video: ecoliftVideo },
+        { name: "ClearMark", category: "iOS AI Grading Platform", year: "2026", description: "A native iOS app that lets teachers and professors manage classes and test/assignment grading with AI. Scan a set of documents with your phone, and provide grading criteria, and the Gemini powered AI will auto grade the work for all students and export into a spreadsheet.", github: "https://github.com/ClearMarkApp", link: "", techstack: ["Swift", "SwiftUI", "Express", "Docker", "Render"], image: clearmark, video: clearmarkVideo },
         { name: "LeetBuddy", category: "LeetCode AI Browser Extension", year: "2025", description: "A Google Chrome extension AI assistant that supercharges the LeetCode interview-prep experience. Whole-page comprehension, text and image analysis from a whiteboard powered by Google Gemini. 3,000+ active users.", github: "https://devpost.com/software/leetbuddy?ref_content=user-portfolio&ref_feature=in_progress", link: "https://chromewebstore.google.com/detail/leetbuddy/nlemdecocfoaimdbfgpilfgdmcllhphn", techstack: ["React", "TailwindCSS", "Express", "Redis", "Docker", "Render"], image: leetbuddy, video: leetbuddyVideo },
         { name: "Jaylolfadez", category: "Social Booking Platform", year: "2024", description: "A full-stack social platform for hair cutting. Users interact with posts through comments and likes and book appointments directly. Generated $400 in early revenue.", github: "", link: "https://jaylolfadez.com/", techstack: ["React", "TailwindCSS", "MongoDB", "Express", "AWS EC2", "AWS S3", "NGINX", "Docker"], image: jaylolfadez },
         { name: "Mac2Cal", category: "University Time Table Exporter", year: "2024", description: "Built with a small team to let McMaster students export their timetable directly to Google Calendar. Adopted by 150+ users.", github: "https://github.com/BaoGeist/McMaster-Calendar-Exporter", link: "https://www.mac2cal.com/", techstack: ["Next.js", "TypeScript", "GCP", "Supabase"], image: mac2cal },
