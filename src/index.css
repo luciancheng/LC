@@ -180,6 +180,11 @@ p {
   background-clip: text; color: transparent; letter-spacing: -0.045em;
 }
 
+.intro-mcmaster {
+  color: var(--color-black-4);
+  letter-spacing: -0.015em;
+}
+
 .intro-companygradient {
   background: radial-gradient(circle, #0064e0, #0484fc);
   animation: text-gradient 15s linear infinite; background-size: 300% 300%;
