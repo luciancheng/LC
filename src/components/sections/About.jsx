@@ -3,8 +3,8 @@ import portraitImg from "../../assets/images/luciancheng_new.png";
 import computerImg from "../../assets/images/lucian_computer.png";
 import mcmasterImg from "../../assets/images/mcmaster1.jpg";
 import overwatchImg from "../../assets/images/overwatch.png";
+import foodImg from "../../assets/images/alfies.png";
 
-// import overwatchImg from "../../assets/images/overwatch.jpg";
 // import foodImg from "../../assets/images/food.jpg";
 
 const focusAreas = ["Core Infrastructure", "ML & Computer Vision", "Full-Stack", "Distributed Systems"];
@@ -14,7 +14,7 @@ const interests = [
         title: "Overwatch",
         tagline: "Competitive team FPS",
         blurb:
-            "I've been playing Overwatch for years — mostly ranked and organized play. I love the mix of mechanics, team coordination, and adapting to the meta. Use to play a lot of tank in Overwatch 1 but more recently play Support heroes like Wuyang.",
+            "I've been playing Overwatch for years — mostly ranked and organized play. I love the mix of mechanics, team coordination, and adapting to the meta. I used to play a lot of tank in Overwatch 1, but more recently play support heroes like Wuyang.",
         image: overwatchImg, // overwatchImg — see image note below
         accent: "linear-gradient(135deg, #f99e1a, #ed6517)",
         icon: "fa-gamepad",
@@ -24,14 +24,14 @@ const interests = [
         tagline: "Restaurants & hidden gems",
         blurb:
             "I keep a food page where I post spots worth trying — from casual takeout to sit-down meals around the GTA and beyond. I love to document my food adventures and share honest reviews on my social media.",
-        image: null, // foodImg — see image note below
+        image: foodImg, // foodImg — see image note below
         link: "",
         accent: "linear-gradient(135deg, var(--color-pink-1), var(--color-pink-2))",
         icon: "fa-utensils",
     },
 ];
 
-// Image suggestions (cards are square, so centre the subject — edges get cropped):
+// Image suggestions (cards are 16:9 — centre the subject, edges may crop):
 // Overwatch — rank-up / competitive progress screen cropped around the rank badge, or your setup.
 // Food — a single dish, overhead or 45°, with the plate centred. Warm light, sharp focus.
 
@@ -94,7 +94,7 @@ const techGroups = [
 ];
 
 const InterestCard = ({ interest }) => {
-    const card = (
+    const inner = (
         <>
             <div className="about-interest-media">
                 {interest.image ? (
@@ -107,32 +107,31 @@ const InterestCard = ({ interest }) => {
                         <i className={`fa-solid ${interest.icon}`} />
                     </div>
                 )}
-                <div className="about-interest-media-overlay" />
             </div>
-            <div className="about-interest-caption">
-                <span className="about-interest-name">{interest.title}</span>
-                <span className="about-interest-detail">{interest.tagline}</span>
+            <div className="about-interest-body">
+                <div className="about-interest-header">
+                    <h4 className="about-interest-name">{interest.title}</h4>
+                    {interest.link && (
+                        <span className="about-interest-link-hint">
+                            View <i className="fa-solid fa-arrow-up-right" />
+                        </span>
+                    )}
+                </div>
+                <p className="about-interest-tagline">{interest.tagline}</p>
+                <p className="about-interest-blurb">{interest.blurb}</p>
             </div>
-            {interest.link && (
-                <span className="about-interest-link-hint">
-                    View <i className="fa-solid fa-arrow-up-right" />
-                </span>
-            )}
         </>
     );
 
-    return (
-        <div className="about-interest-item">
-            {interest.link ? (
-                <a className="about-interest-card" href={interest.link} target="_blank" rel="noreferrer">
-                    {card}
-                </a>
-            ) : (
-                <div className="about-interest-card">{card}</div>
-            )}
-            <p className="about-interest-blurb">{interest.blurb}</p>
-        </div>
-    );
+    if (interest.link) {
+        return (
+            <a className="about-interest-card" href={interest.link} target="_blank" rel="noreferrer">
+                {inner}
+            </a>
+        );
+    }
+
+    return <div className="about-interest-card">{inner}</div>;
 };
 
 const About = () => {
@@ -206,17 +205,14 @@ const About = () => {
                                 <p className="about-card-edu-date">September 2021 — June 2026</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div className="about-card-interests">
-                            <span className="about-label">Also into</span>
-                            <p className="about-card-interests-intro">
-                                Outside of engineering, I like having hobbies that have nothing to do with code.
-                            </p>
-                            <div className="about-interest-stack">
-                                {interests.map((interest) => (
-                                    <InterestCard interest={interest} key={interest.title} />
-                                ))}
-                            </div>
+                    <div className="about-card-interests fade-in-object">
+                        <span className="about-label">Also into</span>
+                        <div className="about-interest-stack">
+                            {interests.map((interest) => (
+                                <InterestCard interest={interest} key={interest.title} />
+                            ))}
                         </div>
                     </div>
                 </div>
