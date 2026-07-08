@@ -3,6 +3,29 @@ import portraitImg from "../../assets/images/lucian_2025_2.jpg";
 import computerImg from "../../assets/images/lucian_computer.png";
 import mcmasterImg from "../../assets/images/mcmaster1.jpg";
 
+// import overwatchImg from "../../assets/images/overwatch.jpg";
+// import foodImg from "../../assets/images/food.jpg";
+
+const focusAreas = ["ML & Computer Vision", "Full-Stack", "Embedded Systems", "Autonomous Systems"];
+
+const interests = [
+    {
+        title: "Overwatch",
+        description: "Competitive team FPS — how I unwind and stay sharp.",
+        image: null, // overwatchImg
+        accent: "linear-gradient(135deg, #f99e1a, #ed6517)",
+        icon: "fa-gamepad",
+    },
+    {
+        title: "Food",
+        description: "Documenting restaurants, dishes, and hidden gems.",
+        image: null, // foodImg
+        link: "",
+        accent: "linear-gradient(135deg, var(--color-pink-1), var(--color-pink-2))",
+        icon: "fa-utensils",
+    },
+];
+
 const techGroups = [
     {
         title: "Languages",
@@ -61,69 +84,133 @@ const techGroups = [
     },
 ];
 
+const InterestCard = ({ interest }) => {
+    const inner = (
+        <>
+            <div className="about-interest-media">
+                {interest.image ? (
+                    <div
+                        className="about-interest-media-img"
+                        style={{ backgroundImage: `url(${interest.image})` }}
+                    />
+                ) : (
+                    <div className="about-interest-media-placeholder" style={{ background: interest.accent }}>
+                        <i className={`fa-solid ${interest.icon}`} />
+                    </div>
+                )}
+                <div className="about-interest-media-overlay" />
+            </div>
+            <div className="about-interest-caption">
+                <span className="about-interest-name">{interest.title}</span>
+                <span className="about-interest-detail">{interest.description}</span>
+            </div>
+            {interest.link && (
+                <span className="about-interest-link-hint">
+                    View <i className="fa-solid fa-arrow-up-right" />
+                </span>
+            )}
+        </>
+    );
+
+    if (interest.link) {
+        return (
+            <a className="about-interest-card" href={interest.link} target="_blank" rel="noreferrer">
+                {inner}
+            </a>
+        );
+    }
+
+    return <div className="about-interest-card">{inner}</div>;
+};
+
 const About = () => {
     return (
         <div id="about" className="about pt-32">
             <div className="content">
                 <SectionHeading text={"Looking into Lucian's background and passion for engineering and technology."} />
 
-                {/* Bento grid */}
-                <div className="about-bento">
-                    {/* Portraits */}
-                    <div className="about-bento-portraits fade-in-object">
-                        <div className="about-bento-portrait-wrap">
-                            <div className="about-bento-portrait-img" style={{ backgroundImage: `url(${portraitImg})` }} />
+                <div className="about-card fade-in-object">
+                    <div className="about-card-grid">
+                        <div className="about-card-photos">
+                            <div className="about-card-photo about-card-photo--primary">
+                                <div
+                                    className="about-card-photo-img"
+                                    style={{ backgroundImage: `url(${portraitImg})` }}
+                                />
+                            </div>
+                            <div className="about-card-photo about-card-photo--secondary">
+                                <div
+                                    className="about-card-photo-img"
+                                    style={{ backgroundImage: `url(${computerImg})` }}
+                                />
+                            </div>
                         </div>
-                        <div className="about-bento-portrait-wrap">
-                            <div className="about-bento-portrait-img" style={{ backgroundImage: `url(${computerImg})` }} />
+
+                        <div className="about-card-main">
+                            <span className="about-label">About</span>
+                            <h2 className="about-card-name">Lucian Cheng</h2>
+                            <p className="about-card-role">Mechatronics & Biomedical Engineer</p>
+
+                            <p className="about-card-bio">
+                                I'm a recent Mechatronics and Biomedical Engineering graduate at McMaster
+                                University. Software and hardware have been passions of mine since I was
+                                young — I'm always looking for new opportunities to push my skills in
+                                technology and build things that matter.
+                            </p>
+                            <p className="about-card-bio">
+                                I enjoy using my multidisciplinary background across software, electrical,
+                                mechanical, and biomedical engineering to ship projects end-to-end. Through
+                                internships and clubs, I've worked on 2D and 3D ML computer vision, full-stack
+                                applications, and autonomous driving systems.
+                            </p>
+
+                            <div className="about-card-tags">
+                                {focusAreas.map((area) => (
+                                    <span className="about-card-tag" key={area}>
+                                        {area}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Story */}
-                    <div className="about-bento-story fade-in-object">
-                        <span className="about-label">INFO</span>
-                        <p>I'm a recent Mechatronics and Biomedical Engineering graduate at McMaster University. For a long time, software and hardware have been a passion of mine, having tinkered in these fields at a young age. I am always looking for new opportunities to showcase my skills and expertise in technology.</p>
-                        <p>I enjoy using my multidisciplinary skills in software, electrical, mechanical, and biomedical engineering to create projects from end-to-end development. During my experiences at internships and clubs, I developed software pertaining to 2D and 3D ML computer vision algorithms, full-stack applications, and autonomous driving systems.</p>
-                    </div>
+                        <div className="about-card-edu">
+                            <div
+                                className="about-card-edu-img"
+                                style={{ backgroundImage: `url(${mcmasterImg})` }}
+                            />
+                            <div className="about-card-edu-body">
+                                <span className="about-label">Education</span>
+                                <h3 className="about-card-edu-school">McMaster University</h3>
+                                <p className="about-card-edu-degree">
+                                    B.Eng. Mechatronics & Biomedical Engineering
+                                </p>
+                                <p className="about-card-edu-date">September 2021 — June 2026</p>
+                            </div>
+                        </div>
 
-                    {/* Stats row */}
-                    <div className="about-bento-stat fade-in-object">
-                        <span className="about-stat-number">5</span>
-                        <span className="about-stat-label">Years studying engineering</span>
-                    </div>
-                    <div className="about-bento-stat fade-in-object">
-                        <span className="about-stat-number">6+</span>
-                        <span className="about-stat-label">Professional experiences</span>
-                    </div>
-                    <div className="about-bento-stat fade-in-object">
-                        <span className="about-stat-number">10+</span>
-                        <span className="about-stat-label">Shipped projects</span>
-                    </div>
-
-                    {/* Education */}
-                    <div className="about-bento-edu fade-in-object">
-                        <span className="about-label">EDUCATION</span>
-                        <h3 className="text-3xl font-semibold tracking-tight mt-3">McMaster University</h3>
-                        <p className="text-lg mt-1" style={{ color: 'var(--color-black-3)' }}>Department of Engineering</p>
-                        <p className="text-sm mt-2" style={{ color: 'var(--color-black-4)' }}>September 2021 — June 2026</p>
-                        <p className="mt-3">B.Eng.BME — Bachelor of Mechatronics & Biomedical Engineering. Relevant coursework in Data Structures & Algorithms, Embedded Systems Design, Software Architectures, Operating Systems, Systems Design, and Computer Networking.</p>
-                    </div>
-
-                    {/* Education image */}
-                    <div className="about-bento-edu-img fade-in-object">
-                        <div className="about-bento-edu-img-inner" style={{ backgroundImage: `url(${mcmasterImg})` }} />
+                        <div className="about-card-interests">
+                            <span className="about-label">Also into</span>
+                            <div className="about-interest-stack">
+                                {interests.map((interest) => (
+                                    <InterestCard interest={interest} key={interest.title} />
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                {/* Tech Stack */}
-                <div className="seperator"></div>
+                <div className="seperator" />
 
-                <div className="about-label mt-6 mb-2">TECH STACK</div>
+                <div className="about-label mt-6 mb-2">Tech stack</div>
                 <h3 className="text-3xl font-semibold tracking-tight mb-10">The tools I reach for.</h3>
 
                 <div className="about-tech-grid">
                     {techGroups.map((group, i) => (
-                        <div className="about-tech-panel hidden-anim" key={group.title} style={{ transitionDelay: `${i * 100}ms` }}>
+                        <div
+                            className="about-tech-panel hidden-anim"
+                            key={group.title}
+                            style={{ transitionDelay: `${i * 100}ms` }}
+                        >
                             <h4 className="about-tech-panel-title">{group.title}</h4>
                             <div className="about-tech-icons">
                                 {group.items.map((item) => (
