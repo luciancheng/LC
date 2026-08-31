@@ -10,13 +10,14 @@ import metagif3 from "../assets/gifs/metagif3.gif";
 import ecocargif from "../assets/gifs/ecocargif.gif";
 import bluewristgif from "../assets/gifs/bluewristgif.gif";
 import databricksgif from "../assets/gifs/db.gif";
+import databricksgif2 from "../assets/gifs/databricks.gif";
 
 export const positions = {
-    "meta-swe": {
-        title: "Software Engineer", company: "Meta", image: metagif2,
-        date: "Incoming July 2025", location: "Menlo Park, CA, USA",
-        description: "Incoming Summer 2026",
-        techstack: ["Infra"], id: 6
+    "db-swe": {
+        title: "Software Engineer", company: "Databricks", image: databricksgif2,
+        date: "Incoming September 2026", location: "Vancouver, BC, Canada",
+        description: "Incoming",
+        techstack: [], id: 6
     },
     "meta-swe-intern": {
         title: "Software Engineer Intern", company: "Meta", image: metagif,
