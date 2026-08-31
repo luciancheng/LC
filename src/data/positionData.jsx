@@ -15,7 +15,7 @@ import databricksgif2 from "../assets/gifs/databricks.gif";
 export const positions = {
     "db-swe": {
         title: "Software Engineer", company: "Databricks", image: databricksgif2,
-        date: "Incoming September 2026", location: "Vancouver, BC, Canada",
+        date: "Incoming Sep 2026", location: "Vancouver, BC, Canada",
         description: "Incoming",
         techstack: [], id: 6
     },
